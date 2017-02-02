@@ -1,7 +1,7 @@
 $(document).ready(function(){
   console.log('doc 1 JQ');
   window.addEventListener('message', receiver, false);
-  console.log($('#frame')[0]);
+  // console.log($('#frame')[0]);
   function receiver(e) {
     $.get('./iframe.style.css',function(data){
       data = formatData(data);
@@ -14,10 +14,7 @@ $(document).ready(function(){
 });//docready
 function formatData(data){
   var formattedArray = [];
-  var styleObject= {
-    selector:'',
-    style:''
-  };
+  var styleObject= {};
   var sel = '';
   var styles = false;
   var sty = '';
@@ -41,6 +38,6 @@ function formatData(data){
     }//if data[i]
   }//for loop
 
-  console.log(formattedArray);
+  // console.log(formattedArray);
   return formattedArray;
 }//formatData

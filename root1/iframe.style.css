@@ -1,0 +1,15 @@
+h1{
+  color:white;
+  background-color: black;
+  border-bottom:1px solid lightgray;
+}
+h3{
+  border-bottom: 4px solid black;
+}
+p{
+  color:blue;
+}
+
+.blue{
+  background-color: blue
+}

@@ -2,6 +2,7 @@ $(document).ready(function(){
   console.log('doc 1 JQ');
   window.addEventListener('message', receiver, false);
   // console.log($('#frame')[0]);
+  $('#frame').hide();
   function receiver(e) {
     $.get('./iframe.style.css',function(data){
       // data = formatData(data);
@@ -9,6 +10,7 @@ $(document).ready(function(){
         data,
         e.origin
       );
+      $('#frame').show();
     });
   }//receiver
 });//docready

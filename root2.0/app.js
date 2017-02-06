@@ -11,5 +11,6 @@ app.listen(port, function(){
   console.log('listening on'+port);
 });
 app.get('/',function(req,res){
+  console.log('base url hit');
   res.sendFile(path.resolve('doc1.html'));
 });
